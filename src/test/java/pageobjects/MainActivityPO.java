@@ -3,6 +3,7 @@ package pageobjects;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import utils.WaitUtils;
 
 public class MainActivityPO extends BasePO {
 
@@ -25,13 +26,31 @@ public class MainActivityPO extends BasePO {
     /**
      * Find Menu on MainActivity
      */
-    @AndroidFindBy(id = "com.example.android.sunshine:id/action_bar_container")
-    AndroidElement MainMenu;
+    @AndroidFindBy(id = "com.example.android.sunshine:id/action_bar")
+    AndroidElement MainActionBar;
 
     /**
      * Find More Options element on MainActivity > Main Menu
      */
     @AndroidFindBy(accessibility = "More options")
-    AndroidElement MoreOptions;
+    AndroidElement ActionBarMoreOptions;
+    /**
+     * This method taps More Options item
+     */
+    public void tapMoreOptions() {
+        ActionBarMoreOptions.click();
+    }
+
+    /**
+     * Find Map Location setting item
+     */
+    @AndroidFindBy(id = "com.example.android.sunshine:id/action_map")
+    AndroidElement ActionBarMapLocation;
+
+    /**
+     * Find Settings setting item
+     */
+    @AndroidFindBy(id = "com.example.android.sunshine:id/action_settings")
+    AndroidElement ActionBarSettings;
 
 }
