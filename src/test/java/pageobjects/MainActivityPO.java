@@ -3,7 +3,6 @@ package pageobjects;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import utils.WaitUtils;
 
 public class MainActivityPO extends BasePO {
 
@@ -30,14 +29,24 @@ public class MainActivityPO extends BasePO {
     AndroidElement MainActionBar;
 
     /**
+     * Check size of MainActionBar to identify if the element was found
+     */
+    public int sizeMainActionBar() {
+        waitUtils.staticWait(3000);
+        return driver.findElementsById("com.example.android.sunshine:id/action_bar").size();
+    }
+
+    /**
      * Find More Options element on MainActivity > Main Menu
      */
     @AndroidFindBy(accessibility = "More options")
     AndroidElement ActionBarMoreOptions;
+
     /**
      * This method taps More Options item
      */
     public void tapMoreOptions() {
+        waitUtils.staticWait(3000);
         ActionBarMoreOptions.click();
     }
 
