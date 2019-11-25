@@ -53,13 +53,42 @@ public class MainActivityPO extends BasePO {
     /**
      * Find Map Location setting item
      */
-    @AndroidFindBy(id = "com.example.android.sunshine:id/action_map")
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget" +
+            ".FrameLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget" +
+            ".LinearLayout/android.widget.RelativeLayout/android.widget.TextView")
     AndroidElement ActionBarMapLocation;
+
+    /**
+     * Click Map Location Menu item
+     */
+    public void  tapMapLocation() {
+        waitUtils.staticWait(3000);
+        ActionBarMapLocation.click();
+    }
 
     /**
      * Find Settings setting item
      */
     @AndroidFindBy(id = "com.example.android.sunshine:id/action_settings")
     AndroidElement ActionBarSettings;
+
+    /**
+     * Check size of modal to identify if the element was found
+     */
+    public int sizeContentModal() {
+        waitUtils.staticWait(3000);
+        return driver.findElementsById("android:id/content").size();
+    }
+
+    /**
+     * Find button to cancel modal
+     */
+    @AndroidFindBy(id = "android:id/button2")
+    AndroidElement modalCancelButton;
+
+    public void tapCancelModal() {
+        waitUtils.staticWait(3000);
+        modalCancelButton.click();
+    }
 
 }
