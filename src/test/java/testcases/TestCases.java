@@ -8,6 +8,8 @@ public class TestCases extends BaseTestCase{
 
     @Test
     public void testMenuMapLocation() {
+
+        // Create the page's driver
         MainActivityPO mainActivityPO = new MainActivityPO(driver);
 
         // Check if ActionBar appears on the screen
@@ -20,6 +22,21 @@ public class TestCases extends BaseTestCase{
         Assert.assertTrue(mainActivityPO.sizeContentModal() != 0);
         // Close modal
         mainActivityPO.tapCancelModal();
+
+    }
+
+    @Test
+    public void testMenuSettings() {
+
+        // Create the page's driver
+        MainActivityPO mainActivityPO = new MainActivityPO(driver);
+
+        // Tap More Options icon
+        mainActivityPO.tapMoreOptions();
+        // Tap Map Location
+        mainActivityPO.tapSettingsItem();
+        // Check whether Settings screen is opened
+        Assert.assertTrue(mainActivityPO.sizeSensineSettings() != 0);
 
     }
 

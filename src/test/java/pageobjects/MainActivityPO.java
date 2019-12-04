@@ -46,7 +46,7 @@ public class MainActivityPO extends BasePO {
      * This method taps More Options item
      */
     public void tapMoreOptions() {
-        waitUtils.staticWait(3000);
+        waitUtils.staticWait(1000);
         ActionBarMoreOptions.click();
     }
 
@@ -67,16 +67,10 @@ public class MainActivityPO extends BasePO {
     }
 
     /**
-     * Find Settings setting item
-     */
-    @AndroidFindBy(id = "com.example.android.sunshine:id/action_settings")
-    AndroidElement ActionBarSettings;
-
-    /**
      * Check size of modal to identify if the element was found
      */
     public int sizeContentModal() {
-        waitUtils.staticWait(3000);
+        waitUtils.staticWait(2000);
         return driver.findElementsById("android:id/content").size();
     }
 
@@ -87,8 +81,31 @@ public class MainActivityPO extends BasePO {
     AndroidElement modalCancelButton;
 
     public void tapCancelModal() {
-        waitUtils.staticWait(3000);
+        waitUtils.staticWait(2000);
         modalCancelButton.click();
+    }
+
+    /**
+     * Find Settings setting item
+     */
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget" +
+            ".FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]")
+    AndroidElement ActionBarSettings;
+
+    /**
+     * Click Settings setting item
+     */
+    public void tapSettingsItem() {
+        waitUtils.staticWait(3000);
+        ActionBarSettings.click();
+    }
+
+    /**
+     * Check size if Sunshine settings screen is opened
+     */
+    public int sizeSensineSettings() {
+        waitUtils.staticWait(3000);
+        return driver.findElementsById("com.example.android.sunshine:id/decor_content_parent").size();
     }
 
 }
