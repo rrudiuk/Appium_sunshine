@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testcases.MenuTestCases" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-04T19:12:09" hostname="Valentin" time="58.261">
+<testsuite name="testcases.MenuTestCases" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-04T19:59:05" hostname="Valentin" time="70.216">
   <properties/>
-  <testcase name="testMenuMapLocation" classname="testcases.MenuTestCases" time="14.088"/>
-  <testcase name="testMenuSettings" classname="testcases.MenuTestCases" time="7.85"/>
+  <testcase name="testMenuMapLocation" classname="testcases.MenuTestCases" time="13.816"/>
+  <testcase name="testMenuSettings" classname="testcases.MenuTestCases" time="20.228"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Dec 04, 2019 9:12:09 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[Dec 04, 2019 9:59:04 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -61,7 +61,7 @@ public class MenuPO extends BasePO{
     /**
      * Click Map Location Menu item
      */
-    public void  tapMapLocation() {
+    public void tapMapLocation() {
         waitUtils.staticWait(3000);
         ActionBarMapLocation.click();
     }
@@ -101,10 +101,26 @@ public class MenuPO extends BasePO{
     }
 
     /**
-     * Check size if Sunshine settings screen is opened
+     * Check size if Sunshine settings screen is opened and if Settings Menu is being shown
      */
-    public int sizeSensineSettings() {
+    public int sizeSunshineSettings() {
         waitUtils.staticWait(3000);
-        return driver.findElementsById("com.example.android.sunshine:id/decor_content_parent").size();
+        return driver.findElementsById("com.example.android.sunshine:id/action_bar_container").size();
     }
+
+    /**
+     * Find Back Arrow on Settings menu
+     */
+    @AndroidFindBy(accessibility = "Navigate up")
+    AndroidElement ActionBarBackArrow;
+
+    /**
+     * Tap Back Arrow
+     */
+    public void tapSettingsBackArrow() {
+        waitUtils.staticWait(3000);
+        ActionBarBackArrow.click();
+    }
+
+
 }
