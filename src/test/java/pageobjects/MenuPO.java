@@ -3,6 +3,9 @@ package pageobjects;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import utils.PropertyUtils;
 
 public class MenuPO extends BasePO{
 
@@ -122,5 +125,62 @@ public class MenuPO extends BasePO{
         ActionBarBackArrow.click();
     }
 
+    /**
+     * Help Selector and method that allow to access Details screen for today's weather
+     */
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget" +
+            ".LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget." +
+            "FrameLayout[2]/android.widget.FrameLayout/android.support.v7.widget" +
+            ".RecyclerView/android.view.ViewGroup[1]")
+    AndroidElement TodayWeatherDetails;
 
+    public void tapTodayWeatherDetails() {
+        waitUtils.staticWait(3000);
+        TodayWeatherDetails.click();
+    }
+
+    /**
+     * Find Details menu
+     */
+    @AndroidFindBy(id = "com.example.android.sunshine:id/action_bar")
+    AndroidElement ActionBarDetails;
+
+    /**
+     * Find title of the Details menu
+     */
+    @AndroidFindBy(xpath = "/hierarchy/android.widget" +
+            ".FrameLayout/android.widget.LinearLayout/android.widget" +
+            ".FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android" +
+            ".view.ViewGroup/android.widget.TextView")
+    AndroidElement ActionBarDetailsTitle;
+
+    /**
+     * Get actual text of ActionBarDetailsTitle
+     */
+    public String actualActionBarDetailsTitle() {
+
+        return ActionBarDetailsTitle.getText();
+    }
+
+    /**
+     * Expected text of ActionBarDetailsTitle
+     */
+    public String expectedActionBarDetailsTitle() {
+
+        return PropertyUtils.getProperty("details.menu.title");
+    }
+
+    /**
+     * Locate Share icon on ActionBar
+     */
+    @AndroidFindBy(accessibility = "Share")
+    AndroidElement ShareItemActionBar;
+
+    /**
+     * Tap Share icon
+     */
+    public void tapShareItemActionBar() {
+        waitUtils.staticWait(3000);
+        ShareItemActionBar.click();
+    }
 }

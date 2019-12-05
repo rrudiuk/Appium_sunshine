@@ -9,7 +9,7 @@ import pageobjects.MenuPO;
 public class MenuTestCases extends BaseTestCase{
 
     @Test
-    public void testMenuMapLocation() {
+    public void testMainMenuMapLocation() {
 
         // Create the page's driver
         MenuPO menuPO = new MenuPO(driver);
@@ -28,7 +28,7 @@ public class MenuTestCases extends BaseTestCase{
     }
 
     @Test
-    public void testMenuSettings() {
+    public void testMainMenuSettings() {
 
         // Create the page's driver
         MenuPO menuPO = new MenuPO(driver);
@@ -48,6 +48,47 @@ public class MenuTestCases extends BaseTestCase{
         // Verify that MainActivity is running by verifying that ActionBar appears on the screen
         Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
 
+    }
+
+    @Test
+    public void testTodayWeatherMenu() {
+
+        // Create the page's driver
+        MenuPO menuPO = new MenuPO(driver);
+
+        // Access Details screen for today's weather
+        menuPO.tapTodayWeatherDetails();
+        // Compare actual title of ActionBar with expected
+        Assert.assertEquals(menuPO.actualActionBarDetailsTitle(),
+                menuPO.expectedActionBarDetailsTitle());
+        // Tap 'Arrow Back' and return to MainActivity
+        menuPO.tapSettingsBackArrow();
+        // Access Details screen for today's weather and return to MainActivity by pressing phone Back button
+        menuPO.tapTodayWeatherDetails();
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        // Check if MainActivity is open by verifying that main ActionBar appears on the screen
+        Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
+
+    }
+
+    @Test
+    public void testDetailsShare() {
+
+        // Create the page's driver
+        MenuPO menuPO = new MenuPO(driver);
+
+        // Access Details screen for today's weather
+        menuPO.tapTodayWeatherDetails();
+        // Tap Share icon on ActionBar
+        menuPO.tapShareItemActionBar();
+        // Check if modal with available apps pops up
+        Assert.assertTrue(menuPO.sizeContentModal() != 0);
+        // Close modal
+        menuPO.tapCancelModal();
+        // Tap 'Arrow Back' and return to MainActivity
+        menuPO.tapSettingsBackArrow();
+        // Check if MainActivity is open by verifying that main ActionBar appears on the screen
+        Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
 
     }
 
