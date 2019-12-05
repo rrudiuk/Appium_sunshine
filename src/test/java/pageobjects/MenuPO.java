@@ -89,7 +89,7 @@ public class MenuPO extends BasePO{
     }
 
     /**
-     * Find Settings setting item
+     * Find Settings setting item on MainActivity
      */
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget" +
             ".FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]")
@@ -183,4 +183,20 @@ public class MenuPO extends BasePO{
         waitUtils.staticWait(3000);
         ShareItemActionBar.click();
     }
+
+    /**
+     * Find Settings setting item on Details screen
+     */
+    @AndroidFindBy(id = "com.example.android.sunshine:id/content")
+    AndroidElement SettingsDetailsActionBar;
+
+    /**
+     * Click Settings setting item
+     */
+    public void tapSettingsDetailsActionBar() {
+        waitUtils.staticWait(3000);
+        SettingsDetailsActionBar.click();
+    }
+
+
 }

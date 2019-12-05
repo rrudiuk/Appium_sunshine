@@ -35,7 +35,7 @@ public class MenuTestCases extends BaseTestCase{
 
         // Tap More Options icon
         menuPO.tapMoreOptions();
-        // Tap Map Location
+        // Tap Settings item
         menuPO.tapSettingsItem();
         // Check whether Settings screen is opened
         Assert.assertTrue(menuPO.sizeSunshineSettings() != 0);
@@ -72,7 +72,7 @@ public class MenuTestCases extends BaseTestCase{
     }
 
     @Test
-    public void testDetailsShare() {
+    public void testDetailsMenuShare() {
 
         // Create the page's driver
         MenuPO menuPO = new MenuPO(driver);
@@ -87,6 +87,43 @@ public class MenuTestCases extends BaseTestCase{
         menuPO.tapCancelModal();
         // Tap 'Arrow Back' and return to MainActivity
         menuPO.tapSettingsBackArrow();
+        // Check if MainActivity is open by verifying that main ActionBar appears on the screen
+        Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
+
+    }
+
+    @Test
+    public void testDetailsMenuSettings() {
+
+        // Create the page's driver
+        MenuPO menuPO = new MenuPO(driver);
+
+        // Access Details screen for today's weather
+        menuPO.tapTodayWeatherDetails();
+        // Tap More Options icon
+        menuPO.tapMoreOptions();
+        // Tap Settings item
+        menuPO.tapSettingsDetailsActionBar();
+        // Check whether Settings screen is opened
+        Assert.assertTrue(menuPO.sizeSunshineSettings() != 0);
+        // Tap 'Arrow Back'
+        menuPO.tapSettingsBackArrow();
+        // Tap 'Arrow Back' and return to MainActivity
+        menuPO.tapSettingsBackArrow();
+        // Check if MainActivity is open by verifying that main ActionBar appears on the screen
+        Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
+
+        // Access Details screen for today's weather
+        menuPO.tapTodayWeatherDetails();
+        // Tap More Options icon
+        menuPO.tapMoreOptions();
+        // Tap Settings item
+        menuPO.tapSettingsDetailsActionBar();
+        // Tap phone Back button twice
+        waitUtils.staticWait(1000);
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        waitUtils.staticWait(1000);
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
         // Check if MainActivity is open by verifying that main ActionBar appears on the screen
         Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
 

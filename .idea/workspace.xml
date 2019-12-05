@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d1210e-313a-4017-af7b-05fb4ba7c013" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="69" column="59" lean-forward="true" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+            <state relative-caret-position="1905">
+              <caret line="127" column="59" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="183" column="35" lean-forward="true" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
+            <state relative-caret-position="202">
+              <caret line="195" column="43" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#758#759#0" expanded="true" />
@@ -77,8 +75,8 @@
         <option value="$PROJECT_DIR$/src/test/java/pageobjects/MainActivityPO.java" />
         <option value="$PROJECT_DIR$/src/test/java/testcases/TestCases.java" />
         <option value="$PROJECT_DIR$/src/test/resources/configuration.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java" />
       </list>
     </option>
   </component>
@@ -179,13 +177,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MenuTestCases">
+  <component name="RunManager" selected="Gradle.MenuTestCases.testDetailsMenuSettings">
     <configuration name="MenuTestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;testcases.MenuTestCases&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MenuTestCases.testDetailsMenuSettings" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;testcases.MenuTestCases.testDetailsMenuSettings&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -240,26 +258,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCases.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;testcases.TestCases.test&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="TestCases.testMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -282,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MenuTestCases.testDetailsMenuSettings" />
         <item itemvalue="Gradle.MenuTestCases" />
         <item itemvalue="Gradle.MenuTestCases.testDetailsShare" />
         <item itemvalue="Gradle.TestCases" />
         <item itemvalue="Gradle.TestCases.testMenu" />
-        <item itemvalue="Gradle.TestCases.test" />
       </list>
     </recent_temporary>
   </component>
@@ -304,12 +302,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 16m 45s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 19m 30s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 22m 20s.xml">
       <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -334,9 +326,16 @@
     <history-entry file="MenuTestCases - 2019.12.06 at 00h 20m 32s.xml">
       <configuration name="MenuTestCases" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="MenuTestCases_testDetailsMenuSettings - 2019.12.06 at 00h 34m 05s.xml">
+      <configuration name="MenuTestCases.testDetailsMenuSettings" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testDetailsMenuSettings - 2019.12.06 at 00h 51m 58s.xml">
+      <configuration name="MenuTestCases.testDetailsMenuSettings" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="15" width="1346" height="701" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -472,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="183" column="35" lean-forward="true" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
+        <state relative-caret-position="202">
+          <caret line="195" column="43" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#758#759#0" expanded="true" />
@@ -484,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="69" column="59" lean-forward="true" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+        <state relative-caret-position="1905">
+          <caret line="127" column="59" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
