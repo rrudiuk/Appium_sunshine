@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.PropertyUtils;
 
+import java.util.List;
+
 public class MenuPO extends BasePO{
 
     /**
@@ -196,6 +198,24 @@ public class MenuPO extends BasePO{
     public void tapSettingsDetailsActionBar() {
         waitUtils.staticWait(3000);
         SettingsDetailsActionBar.click();
+    }
+
+    /**
+     * Locate the element with the weather for tomorrow from forecast list
+     */
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget" +
+            ".LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android." +
+            "widget.FrameLayout[2]/android.widget.FrameLayout/android.support.v7.widget." +
+            "RecyclerView/android.view.ViewGroup[3]")
+    AndroidElement firstWeatherItem;
+
+    /**
+     * Click the first item of the weather forecast list
+     */
+    public void tapTomorrowWeatherItem () {
+
+        waitUtils.staticWait(1500);
+        firstWeatherItem.click();
     }
 
 

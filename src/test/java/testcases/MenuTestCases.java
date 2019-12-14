@@ -72,6 +72,27 @@ public class MenuTestCases extends BaseTestCase{
     }
 
     @Test
+    public void testForecastWeatherItemMenu() {
+
+        // Create the page's driver
+        MenuPO menuPO = new MenuPO(driver);
+
+        // Access Details screen for the first forecast item
+        menuPO.tapTomorrowWeatherItem();
+        // Compare actual title of ActionBar with expected
+        Assert.assertEquals(menuPO.actualActionBarDetailsTitle(),
+                menuPO.expectedActionBarDetailsTitle());
+        // Tap 'Arrow Back' and return to MainActivity
+        menuPO.tapSettingsBackArrow();
+        // Access Details screen for the last forecast item and return to MainActivity by pressing phone Back button
+        menuPO.tapTomorrowWeatherItem();
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        // Check if MainActivity is open by verifying that main ActionBar appears on the screen
+        Assert.assertTrue(menuPO.sizeMainActionBar() != 0);
+
+    }
+
+    @Test
     public void testDetailsMenuShare() {
 
         // Create the page's driver

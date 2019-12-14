@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37d1210e-313a-4017-af7b-05fb4ba7c013" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pageobjects/MenuPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/pageobjects/MenuPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/testcases/MenuTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/testcases/MenuTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/testcases.MenuTestCases.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/testcases.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-testcases.MenuTestCases.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java" afterDir="false" />
     </list>
@@ -29,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="127" column="59" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
+            <state relative-caret-position="-1035">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,12 +61,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="195" column="43" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="43" />
+            <state relative-caret-position="277">
+              <caret line="217" column="33" lean-forward="true" selection-start-line="217" selection-start-column="33" selection-end-line="217" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,7 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -177,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.MenuTestCases.testDetailsMenuSettings">
+  <component name="RunManager" selected="Gradle.MenuTestCases.testTodayWeatherMenu">
     <configuration name="MenuTestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,12 +236,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MenuTestCases.testDetailsShare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MenuTestCases.testForecastWeatherItemMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;testcases.MenuTestCases.testDetailsShare&quot;" />
+        <option name="scriptParameters" value="--tests &quot;testcases.MenuTestCases.testForecastWeatherItemMenu&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -238,12 +256,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MenuTestCases.testForecastWeatherMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;testcases.TestCases&quot;" />
+        <option name="scriptParameters" value="--tests &quot;testcases.MenuTestCases.testForecastWeatherMenu&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -258,12 +276,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestCases.testMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MenuTestCases.testTodayWeatherMenu" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;testcases.TestCases.testMenu&quot;" />
+        <option name="scriptParameters" value="--tests &quot;testcases.MenuTestCases.testTodayWeatherMenu&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -280,11 +298,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MenuTestCases.testDetailsMenuSettings" />
+        <item itemvalue="Gradle.MenuTestCases.testTodayWeatherMenu" />
+        <item itemvalue="Gradle.MenuTestCases.testForecastWeatherItemMenu" />
+        <item itemvalue="Gradle.MenuTestCases.testForecastWeatherMenu" />
         <item itemvalue="Gradle.MenuTestCases" />
-        <item itemvalue="Gradle.MenuTestCases.testDetailsShare" />
-        <item itemvalue="Gradle.TestCases" />
-        <item itemvalue="Gradle.TestCases.testMenu" />
+        <item itemvalue="Gradle.MenuTestCases.testDetailsMenuSettings" />
       </list>
     </recent_temporary>
   </component>
@@ -302,42 +320,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 22m 20s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 24m 03s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 27m 03s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 36m 56s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases_testDetailsShare - 2019.12.05 at 23h 44m 04s.xml">
-      <configuration name="MenuTestCases.testDetailsShare" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases - 2019.12.06 at 00h 13m 44s.xml">
-      <configuration name="MenuTestCases" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases - 2019.12.06 at 00h 13m 45s.xml">
-      <configuration name="MenuTestCases" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases - 2019.12.06 at 00h 20m 32s.xml">
-      <configuration name="MenuTestCases" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MenuTestCases_testDetailsMenuSettings - 2019.12.06 at 00h 34m 05s.xml">
-      <configuration name="MenuTestCases.testDetailsMenuSettings" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="MenuTestCases_testDetailsMenuSettings - 2019.12.06 at 00h 51m 58s.xml">
       <configuration name="MenuTestCases.testDetailsMenuSettings" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases - 2019.12.06 at 00h 56m 21s.xml">
+      <configuration name="MenuTestCases" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherMenu - 2019.12.14 at 21h 47m 49s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherMenu - 2019.12.14 at 21h 52m 40s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherMenu - 2019.12.14 at 21h 52m 41s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherMenu - 2019.12.14 at 21h 54m 40s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherMenu - 2019.12.14 at 21h 59m 14s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherMenu - 2019.12.14 at 22h 15m 23s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testForecastWeatherItemMenu - 2019.12.14 at 22h 26m 10s.xml">
+      <configuration name="MenuTestCases.testForecastWeatherItemMenu" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MenuTestCases_testTodayWeatherMenu - 2019.12.14 at 22h 28m 10s.xml">
+      <configuration name="MenuTestCases.testTodayWeatherMenu" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="15" width="1346" height="701" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28923076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -354,7 +372,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32928944" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50076926" side_tool="true" weight="0.32928944" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.32871974" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3275563" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -471,20 +489,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/MenuPO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="195" column="43" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="43" />
+        <state relative-caret-position="277">
+          <caret line="217" column="33" lean-forward="true" selection-start-line="217" selection-start-column="33" selection-end-line="217" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testcases/MenuTestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="59" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
+        <state relative-caret-position="-1035">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
