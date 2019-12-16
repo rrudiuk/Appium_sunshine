@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testcases.TestCases" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-16T20:48:05" hostname="Valentin" time="3.917">
+  <properties/>
+  <testcase name="testElementsMainActivityWidget" classname="testcases.TestCases" time="3.917"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Dec 16, 2019 10:48:05 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

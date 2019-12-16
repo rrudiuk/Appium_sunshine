@@ -31,10 +31,10 @@ public class MainActivityPO extends BasePO {
     /**
      * Check size of mainContentView to identify if the element was found
      */
-    public int sizeMainContentView() {
+    public boolean displayMainContentView() {
 
         waitUtils.staticWait(3000);
-        return driver.findElementsById("android:id/content").size();
+        return driver.findElementById("android:id/content").isDisplayed();
 
     }
 
@@ -47,13 +47,99 @@ public class MainActivityPO extends BasePO {
     /**
      * Check size of RecyclerView to identify if the element was found
      */
-    public int sizeRecyclerView() {
+    public boolean displayRecyclerView() {
 
         waitUtils.staticWait(1000);
-        return driver.findElementsById("com.example.android.sunshine:id/recyclerview_forecast").size();
+        return driver.findElementById("com.example.android.sunshine:id/recyclerview_forecast").isDisplayed();
 
     }
 
+    /**
+     * Check if Date (day) appears on MainActivity widget
+     * @return true if so
+     */
+    public boolean sizeMainWidgetDate() {
 
+        waitUtils.staticWait(3000);
+        return driver.findElementById("com.example.android.sunshine:id/date").isDisplayed();
+
+    }
+
+    /**
+     * Get value of Date (day)
+     */
+    public String valueMainWidgetDate() {
+
+        return driver.findElementById("com.example.android.sunshine:id/date").getText();
+
+    }
+
+    /**
+     * Check if Weather icon appears on MainActivity widget
+     * @return true if so
+     */
+    public boolean sizeMainWeatherIcon() {
+
+        // return driver.findElementsById("com.example.android.sunshine:id/weather_icon").size();
+        return driver.findElementById("com.example.android.sunshine:id/weather_icon").isDisplayed();
+
+    }
+
+    /**
+     * Check if High temperature value appears on MainActivity widget
+     * @return true if so
+     */
+    public boolean sizeMainWidgetHighTemperature() {
+
+        return driver.findElementById("com.example.android.sunshine:id/high_temperature").isDisplayed();
+
+    }
+
+    /**
+     * Get value of High temperature
+     */
+    public String valueMainWidgetHighTemperature() {
+
+        return driver.findElementById("com.example.android.sunshine:id/high_temperature").getText();
+
+    }
+
+    /**
+     * Check if Weather Description appears on MainActivity widget
+     * @return true if so
+     */
+    public boolean sizeMainWidgetWeatherDescription() {
+
+        return driver.findElementById("com.example.android.sunshine:id/weather_description").isDisplayed();
+
+    }
+
+    /**
+     * Get value of Weather Description
+     */
+    public String valueMainWidgetWeatherDescription() {
+
+        return driver.findElementById("com.example.android.sunshine:id/weather_description").getText();
+
+    }
+
+    /**
+     * Check if Low temperature value appears on MainActivity widget
+     * @return true if so
+     */
+    public boolean sizeMainWidgetLowTemperature() {
+
+        return driver.findElementById("com.example.android.sunshine:id/low_temperature").isDisplayed();
+
+    }
+
+    /**
+     * Get value of Low temperature
+     */
+    public String valueMainWidgetLowTemperature() {
+
+        return driver.findElementById("com.example.android.sunshine:id/low_temperature").getText();
+
+    }
 
 }
