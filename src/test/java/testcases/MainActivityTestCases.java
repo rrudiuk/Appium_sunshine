@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobjects.MainActivityPO;
 
-public class TestCases extends BaseTestCase{
+public class MainActivityTestCases extends BaseTestCase{
 
     @Test
     public void testMainElementsAppear() {
